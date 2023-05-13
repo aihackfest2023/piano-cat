@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div id="upload-area">
+        <h5 class="left">
+            Step 1️⃣: Upload a Recording (mp3 supported)
+        </h5>
+        <div style="padding-top:2%">
+            <form action="{{ url_for('maker') }}" method="post" enctype="multipart/form-data">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+              <input type="file" accept="audio/mpeg3" id="file" name="file">
+              <input type="submit" id="audio-submit">
+            </form>
+        </div>
+    </div>
+{% endblock %}

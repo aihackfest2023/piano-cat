@@ -1,0 +1,89 @@
+h1.top {
+  font-family: monospace;
+  color: #5f51fe;
+  text-align: center;
+  padding-top: 5%;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+h3.top {
+  font-family: monospace;
+  color: #9c6feb;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 45px
+}
+
+h5.top {
+  font-family: monospace;
+  color: #9c6feb;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 30px
+}
+
+h5.mid {
+  font-family: monospace;
+  font-size: 20px
+}
+
+h5.left {
+  font-family: monospace;
+  color: #9c6feb;
+  padding-top: 5%;
+  font-size: 25px
+}
+
+p.top {
+  font-family: monospace;
+  color: #9c6feb;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 20px
+}
+
+hr.top {
+  text-align: center;
+  padding-top: 1%;
+  height: 1px;
+  background-color: #5f51fe;
+}
+
+nav.navi-color {
+  background-color: #5f51fe;
+}
+
+div.demo {
+    padding-top: 3%;
+    text-align: center;
+}
+
+div.small {
+  padding-top: 2%
+}
+
+button.custom {
+  background-color: #5f51fe;
+}
+
+body {
+  background-color: #e7e5fa;
+}
+
+a:link {
+  color: #e7e5fa;
+}
+
+a:hover {
+  color: #7e8efb;
+}
+
+a:active {
+  color: #e7e5fa;
+}
+
+mark {
+  background-color: #5f51fe;
+  color: #e7e5fa;
+}

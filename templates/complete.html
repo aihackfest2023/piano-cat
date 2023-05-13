@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div id="result-area">
+      <h5 class="left">
+          Step 3️⃣: Download :D
+      </h5>
+      <div class="small row">
+          <div class="container">
+              <div class="col">
+                  <audio controls>
+                      <source src="{{ output }}" type="audio/mpeg">
+                  </audio>
+              </div>
+              <div class="col">
+                  <button type="button" class="btn custom">
+                      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                      <a href="{{ output }}" download>💾</a>
+                  </button>
+              </div>
+          </div>
+      </div>
+      <div class="container demo">
+            <button type="button" class="btn custom">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                <a href="{{ url_for('main') }}">
+                    <h5 class="mid" style="text-align:center">
+                        <mark>Do it again!</mark>
+                    </h5>
+                </a>
+            </button>
+      </div>
+  </div>
+{% endblock %}
